@@ -56,3 +56,8 @@ footer{padding-top:34px;padding-bottom:44px;display:flex;justify-content:space-b
 .hike-story{max-width:760px;margin:14px 0 38px;color:var(--muted);font-size:16px}
 .hike-story strong{color:var(--text)}
 @media(max-width:780px){.feature-photo.hiking{max-width:none}.feature-photo.hiking img{aspect-ratio:4/5;object-position:center 45%}}
+
+.hiking-photo{margin-top:34px;max-width:560px}
+.hiking-photo img{width:100%;aspect-ratio:9/16;object-position:center 42%}
+.hiking-story{max-width:720px}
+@media(max-width:780px){.hiking-photo{max-width:none}.hiking-photo img{aspect-ratio:3/4;object-position:center 38%}}
