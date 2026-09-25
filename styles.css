@@ -48,3 +48,12 @@ footer{display:flex;justify-content:space-between;gap:20px;padding-top:28px;padd
 .soul-copy h2{font-size:clamp(34px,5vw,58px);letter-spacing:-.045em;line-height:1.02}
 .soul-copy p:last-child{max-width:570px;margin:18px 0 0;font-size:16px;line-height:1.65;color:rgba(255,255,255,.88)}
 @media(max-width:780px){.soul-banner{padding:0 20px 72px}.soul-banner-inner{min-height:470px;border-radius:22px}.soul-banner-inner>img{object-position:61% center}.soul-banner-inner:after{background:linear-gradient(0deg,rgba(5,10,18,.76) 0%,rgba(5,10,18,.28) 56%,rgba(5,10,18,.02) 82%)}.soul-copy{left:22px;right:22px;bottom:24px}.soul-copy h2{font-size:36px}.soul-copy p:last-child{font-size:14px;line-height:1.55}}
+
+.travel-hero{max-width:var(--max);margin:0 auto;padding:34px 28px 0}
+.travel-hero-inner{position:relative;min-height:620px;overflow:hidden;border-radius:28px;border:1px solid var(--line);background:#172033}
+.travel-hero-inner>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 52%}
+.travel-hero-inner:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(5,10,18,.76) 0%,rgba(5,10,18,.28) 48%,rgba(5,10,18,.02) 78%)}
+.travel-hero-copy{position:absolute;z-index:2;left:clamp(24px,5vw,62px);right:clamp(24px,5vw,62px);bottom:clamp(28px,5vw,58px);max-width:760px;color:#fff;text-shadow:0 1px 14px rgba(0,0,0,.3)}
+.travel-hero-copy h1{font-size:clamp(38px,5.2vw,68px);margin:0;max-width:760px;letter-spacing:-.045em}
+.travel-hero-copy p:last-child{max-width:650px;margin:18px 0 0;font-size:16px;line-height:1.65;color:rgba(255,255,255,.9)}
+@media(max-width:780px){.travel-hero{padding:18px 20px 0}.travel-hero-inner{min-height:500px;border-radius:22px}.travel-hero-inner>img{object-position:58% center}.travel-hero-copy{left:22px;right:22px;bottom:24px}.travel-hero-copy h1{font-size:38px}.travel-hero-copy p:last-child{font-size:14px;line-height:1.55}}
