@@ -61,3 +61,11 @@ footer{padding-top:34px;padding-bottom:44px;display:flex;justify-content:space-b
 .hiking-photo img{width:100%;aspect-ratio:9/16;object-position:center 42%}
 .hiking-story{max-width:720px}
 @media(max-width:780px){.hiking-photo{max-width:none}.hiking-photo img{aspect-ratio:3/4;object-position:center 38%}}
+
+.field-story-section{padding-top:88px}
+.field-story{margin-top:48px;overflow:hidden;border-radius:30px;background:var(--soft)}
+.field-story>img{width:100%;aspect-ratio:16/9;object-fit:cover;object-position:center 52%}
+.field-story-copy{max-width:900px;padding:30px 34px 36px}
+.field-story-meta{margin:0 0 12px;color:var(--blue);font-size:13px;font-weight:650}
+.field-story-copy p:last-child{margin:0;color:var(--muted);font-size:18px;line-height:1.65}
+@media(max-width:780px){.field-story-section{padding-top:64px}.field-story{margin-top:30px;border-radius:24px}.field-story>img{aspect-ratio:4/3}.field-story-copy{padding:24px}.field-story-copy p:last-child{font-size:16px}}
