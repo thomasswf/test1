@@ -50,3 +50,9 @@ footer{padding-top:34px;padding-bottom:44px;display:flex;justify-content:space-b
 .hobby-hero-copy h1{max-width:720px;margin-top:10px;font-size:clamp(46px,6vw,78px);letter-spacing:-.05em}
 .hobby-hero-copy p:last-child{max-width:620px;margin:18px 0 0;color:rgba(255,255,255,.9);font-size:17px;line-height:1.58}
 @media(max-width:780px){.hobby-hero{margin-top:14px;padding:0 12px}.hobby-hero-inner{min-height:540px;border-radius:26px}.hobby-hero-inner>img{object-position:58% center}.hobby-hero-copy{left:24px;right:24px;bottom:28px}.hobby-hero-copy h1{font-size:40px}.hobby-hero-copy p:last-child{font-size:15px}}
+
+.feature-photo.hiking{max-width:640px;margin:32px 0 0}
+.feature-photo.hiking img{aspect-ratio:9/16;object-position:center 48%}
+.hike-story{max-width:760px;margin:14px 0 38px;color:var(--muted);font-size:16px}
+.hike-story strong{color:var(--text)}
+@media(max-width:780px){.feature-photo.hiking{max-width:none}.feature-photo.hiking img{aspect-ratio:4/5;object-position:center 45%}}

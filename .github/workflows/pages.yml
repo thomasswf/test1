@@ -36,6 +36,7 @@ jobs:
           cat .site-assets/furano.part*.b64 | tr -d '\n' | base64 --decode > assets/furano-snowboard-2024-12-21.webp
           cat .site-assets/iwahara.part*.b64 | tr -d '\n' | base64 --decode > assets/iwahara-2023-01-28.webp
           cat .site-assets/fuji-correct.part*.b64 | tr -d '\n' | base64 --decode > assets/fuji-flight-2024-01-19.webp
+          cat .site-assets/tanigawa.part*.b64 | tr -d '\n' | base64 --decode > assets/tanigawa-2023-10-22.webp
           cat \
             .site-assets/tsu3.part01.b64 \
             .site-assets/tsu3.part02a.b64 \
