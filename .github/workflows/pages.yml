@@ -35,6 +35,7 @@ jobs:
           mkdir -p assets
           cat .site-assets/furano.part*.b64 | tr -d '\n' | base64 --decode > assets/furano-snowboard-2024-12-21.webp
           cat .site-assets/iwahara.part*.b64 | tr -d '\n' | base64 --decode > assets/iwahara-2023-01-28.webp
+          cat .site-assets/fuji-correct.part*.b64 | tr -d '\n' | base64 --decode > assets/fuji-flight-2024-01-19.webp
           cat \
             .site-assets/tsu3.part01.b64 \
             .site-assets/tsu3.part02a.b64 \
@@ -50,6 +51,7 @@ jobs:
             | tr -d '\n' | base64 --decode > assets/tsumekizaki-lighthouse-2022-02-21.webp
           echo "7406afdd017d362e8c917fe4b98f4e365c7e30ba8912ed1d0f93e87969b99ad6  assets/furano-snowboard-2024-12-21.webp" | sha256sum -c -
           echo "0957d1828281a27d2ac981b71ef186b1edca3344986abca2e6dbb4b1e4eb9673  assets/iwahara-2023-01-28.webp" | sha256sum -c -
+          echo "f333aec10af487c50165a3a5772aebde84f4637ec573be3d059cce31ffd618af  assets/fuji-flight-2024-01-19.webp" | sha256sum -c -
           echo "f0e1afae3e74f9972dc94959e1ce1e64f2d7d77770a20dd08c131732c550a791  assets/tsumekizaki-lighthouse-2022-02-21.webp" | sha256sum -c -
           rm -rf .site-assets
       - name: Upload artifact
