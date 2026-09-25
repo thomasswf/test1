@@ -1,12 +1,17 @@
 # Thomas Sin — Personal Website
 
-A professional + personal website covering APAC availability, data center infrastructure, engineering leadership, selected projects, and interests.
+Official personal website for Thomas Sin.
 
-## Structure
-- Home / About
-- Experience
-- Expertise
-- Beyond work
+**Live site:** https://thomasswf.github.io/
 
-## Deployment
-GitHub Pages deployment is configured with GitHub Actions.
+## Languages
+- English
+- 日本語
+- 繁體中文
+
+## Sections
+- Work
+- Life & Travel
+- Interests
+
+Deployment is handled automatically through GitHub Pages and GitHub Actions.
