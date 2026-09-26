@@ -85,3 +85,13 @@ footer{padding-top:34px;padding-bottom:44px;display:flex;justify-content:space-b
 
 /* Hero quality pass: avoid over-enlarging the 2025 GALA source on wide screens. */
 @media(min-width:781px){.hobby-hero{max-width:1180px}.hobby-hero-inner{min-height:620px}}
+
+.foundation-section{padding-top:86px}
+.foundation-story{display:grid;grid-template-columns:minmax(280px,.72fr) minmax(0,1.28fr);gap:clamp(36px,6vw,84px);align-items:center;margin-top:42px}
+.foundation-story figure{margin:0;max-width:520px}
+.foundation-story img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 48%;border-radius:30px;background:var(--soft)}
+.foundation-story figcaption{margin-top:11px;color:var(--muted);font-size:13px}
+.foundation-copy h2{max-width:760px;margin:0;font-size:clamp(38px,4.5vw,62px);letter-spacing:-.045em;line-height:1.02}
+.foundation-copy p{max-width:720px;margin:24px 0 0;color:var(--muted);font-size:19px;line-height:1.68}
+@media(max-width:900px){.foundation-story{grid-template-columns:1fr;gap:30px}.foundation-story figure{max-width:620px}.foundation-copy h2{font-size:42px}}
+@media(max-width:780px){.foundation-section{padding-top:66px}.foundation-story{margin-top:28px}.foundation-story img{aspect-ratio:4/5;border-radius:24px}.foundation-copy h2{font-size:38px}.foundation-copy p{font-size:17px}}
