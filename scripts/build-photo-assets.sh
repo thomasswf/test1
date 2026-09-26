@@ -14,6 +14,18 @@ while IFS=$'\t' read -r output sha256 parts; do
   [[ -z "${output// }" ]] && continue
   [[ "$output" == \#* ]] && continue
 
+  # Direct binary assets are now the source of truth. Only reconstruct legacy
+  # photos that are absent from the checkout; never overwrite newer hero files.
+  if [[ -s "$output" ]]; then
+    mime="$(file -b --mime-type "$output")"
+    if [[ "$mime" != "image/webp" ]]; then
+      echo "Unexpected MIME for existing $output: $mime" >&2
+      exit 1
+    fi
+    echo "Keeping existing binary asset $output"
+    continue
+  fi
+
   mkdir -p "$(dirname "$output")"
   tmp_b64="$(mktemp)"
   : > "$tmp_b64"
