@@ -82,3 +82,6 @@ footer{padding-top:34px;padding-bottom:44px;display:flex;justify-content:space-b
 .work-overview{padding-top:78px;padding-bottom:28px}
 .work-overview .page-lead{max-width:920px}
 @media(max-width:780px){.work-hero{margin-top:14px;padding:0 12px}.work-hero-inner{min-height:540px;border-radius:26px}.work-hero-inner>img{object-position:56% center}.work-hero-copy{left:24px;right:24px;bottom:28px}.work-hero-copy .soul-kicker{margin-top:14px}.work-hero-copy h1{font-size:40px}.work-hero-copy>p:last-child{font-size:15px}.work-overview{padding-top:58px}}
+
+/* Hero quality pass: avoid over-enlarging the 2025 GALA source on wide screens. */
+@media(min-width:781px){.hobby-hero{max-width:1180px}.hobby-hero-inner{min-height:620px}}
